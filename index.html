@@ -1,94 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shesh Narayan Dhurandhar | Research Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-     <style>
-        .research-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .research-gallery figure {
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shesh Narayan Dhurandhar | Research Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background: #0073e6;
+      color: #fff;
+      padding: 20px 10px;
+    }
+    nav {
+      background: #333;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .about-container img {
+      border-radius: 50%;
+      width: 180px;
+    }
+    .about-container p {
+      flex: 1;
+      font-size: 16px;
+      text-align: justify;
+    }
+    .tagline {
+      font-style: italic;
+      color: #444;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+    strong {
+      color: #0073e6;
+    }
+    span.highlight {
+      color: #e67300;
+      font-weight: bold;
+    }
+    span.topic {
+      color: #009973;
+      font-weight: bold;
+    }
+    span.hpc {
+      color: #cc0066;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Shesh Narayan Dhurandhar</h1>
-        <p>Postdoctoral Researcher | IIT Madras | Aerospace & CFD</p>
-    </header>
+  <header>
+    <h1>Shesh Narayan Dhurandhar</h1>
+    <p>Postdoctoral Researcher | IIT Madras | Aerospace & CFD</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education and Resarch</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-             <li><a href="#conferences">Conferences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education and Research</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#conferences">Conferences</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<section id="about">
+  <!-- About Me Section -->
+  <section id="about">
     <h2>About Me</h2>
     <div class="about-container">
-        <figure>
-            <img src="profile.jpg" alt="Shesh Narayan Dhurandhar - Postdoctoral Researcher at IIT Madras" width="200" style="border-radius: 50%;">
-        </figure>
+      <img src="profile.jpg" alt="Shesh Narayan Dhurandhar - Postdoctoral Researcher at IIT Madras">
+      <div>
+        <p><strong>My name is Shesh Narayan Dhurandhar</strong>, and I am currently a <strong>Postdoctoral Researcher at IIT Madras</strong>.</p>
+        <p class="tagline">Exploring fluid dynamics from the molecular to the continuum scale.</p>
         <p>
-            My name is Shesh Narayan Dhurandhar, and I am currently a Postdoctoral Researcher at IIT Madras.
-Exploring fluid dynamics from the molecular to the continuum scale.
-
-I received my Ph.D. in Mechanical and Industrial Engineering from the Indian Institute of Technology Roorkee, where I specialized in rarefied gas dynamics and radiative heat transfer.
-
-My research focuses on advancing the understanding of high-speed and hypersonic flows through computational fluid dynamics (CFD), with applications in rarefied gas dynamics, radiative heat transfer, multiphase flow dynamics, and vortex-dominated compressible flows. I am also actively involved in high-performance computing (MPI, OpenACC, OpenMP) to enable large-scale, high-fidelity flow simulations.
-
-I am passionate about developing robust computational models that bridge fundamental fluid dynamics with real-world aerospace and energy applications.        
+          I received my <strong>Ph.D. in Mechanical and Industrial Engineering</strong> from the 
+          <strong>Indian Institute of Technology Roorkee</strong>, where I specialized in 
+          <span class="highlight">rarefied gas dynamics</span> and <span class="highlight">radiative heat transfer</span>.
         </p>
+        <p>
+          My research focuses on advancing the understanding of 
+          <strong>high-speed and hypersonic flows</strong> through 
+          <strong>computational fluid dynamics (CFD)</strong>, with applications in 
+          <span class="topic">rarefied gas dynamics</span>, 
+          <span class="topic">radiative heat transfer</span>, 
+          <span class="topic">multiphase flow dynamics</span>, and 
+          <span class="topic">vortex-dominated compressible flows</span>.
+        </p>
+        <p>
+          I am also actively involved in <span class="hpc">high-performance computing</span> (MPI, OpenACC, OpenMP) 
+          to enable large-scale, high-fidelity flow simulations.  
+          I am passionate about developing robust computational models that bridge 
+          <strong>fundamental fluid dynamics</strong> with 
+          <strong>real-world aerospace and energy applications</strong>.
+        </p>
+      </div>
     </div>
-</section>
+  </section>
+</body>
+</html>
 
-    <h2>About Me</h2>
-
-<img src="your-photo.jpg" alt="Shesh Narayan Dhurandhar" style="width:180px; border-radius:50%; float:left; margin-right:20px;">
-
-<p><strong style="font-size:18px;">My name is <span style="color:#0073e6;">Shesh Narayan Dhurandhar</span></strong>, 
-and I am currently a <strong>Postdoctoral Researcher at IIT Madras</strong>.</p>
-
-<p style="font-style:italic; color:#444;">
-Exploring fluid dynamics from the molecular to the continuum scale.
-</p>
-
-<p>
-I received my <strong>Ph.D. in Mechanical and Industrial Engineering</strong> 
-from the <strong>Indian Institute of Technology Roorkee</strong>, 
-where I specialized in <span style="color:#e67300;">rarefied gas dynamics</span> 
-and <span style="color:#e67300;">radiative heat transfer</span>.
-</p>
-
-<p>
-My research focuses on advancing the understanding of 
-<strong style="color:#0073e6;">high-speed and hypersonic flows</strong> 
-through <strong style="color:#0073e6;">computational fluid dynamics (CFD)</strong>, 
-with applications in <span style="color:#009973;">rarefied gas dynamics</span>, 
-<span style="color:#009973;">radiative heat transfer</span>, 
-<span style="color:#009973;">multiphase flow dynamics</span>, 
-and <span style="color:#009973;">vortex-dominated compressible flows</span>.
-</p>
-
-<p>
-I am also actively involved in 
-<strong style="color:#cc0066;">high-performance computing</strong> 
-(MPI, OpenACC, OpenMP) to enable large-scale, high-fidelity flow simulations.  
-I am passionate about developing robust computational models that bridge 
-<strong>fundamental fluid dynamics</strong> with 
-<strong>real-world aerospace and energy applications</strong>.
-</p>
 
 
 <section id="education">
@@ -320,6 +362,7 @@ I am passionate about developing robust computational models that bridge
     </footer>
 </body>
 </html>
+
 
 
 
